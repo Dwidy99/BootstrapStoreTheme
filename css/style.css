@@ -2,7 +2,8 @@
 	--main-font: 'Kiwi Maru', serif;
 	--second-font: 'Poppins', sans-serif;
 	--main-color: #5e328e;
-	--second-color: #e73034;
+	--second-color: #400085;
+	--danger-color: #e73034;
 	--third-color: #00a96c;
 	--line-color: #efb02e;
 	--font-black-color: #333;
@@ -11,7 +12,7 @@
 
 /* Navbar */
 .navbar .navbar-brand {
-	font-family: var(--second-font, verdana);
+	font-family: var(--danger-font, verdana);
 	font-size: 16px;
 }
 
@@ -66,7 +67,7 @@
 	height: 50px;
 	background-color: var(--main-color, purple);
 	color: var(--font-white-color, #fff);
-	border-left: 5px solid var(--second-color, red);
+	border-left: 5px solid var(--danger-color, red);
 }
 
 /* Product */
@@ -87,8 +88,8 @@
 	background-color: var(--main-color, purple);
 }
 
-.testimonial h3 {
-	padding-top: 50px;
+.testimonial .title {
+	margin: 30px 0;
 	text-align: center;
 	color: var(--font-white-color, #eaeaea);
 }
@@ -98,7 +99,7 @@
 	height: 95px;
 }
 
-.testimonial h5,
+.testimonial .text h5,
 .testimonial p {
 	color: var(--font-white-color, #fff);
 }
@@ -115,6 +116,34 @@
 	float: left;
 }
 
+/* Mega-Footer */
+.mega-footer {
+	background-color: var(--second-color, rgb(90, 1, 90));
+	color: var(--font-white-color, #fff);
+}
+
+.mega-footer .row {
+	margin-left: 40px;
+	padding: 25px 0;
+}
+
+.mega-footer .sitemap a {
+	text-decoration: none;
+	color: white;
+}
+
+/* footer */
+footer .text {
+	margin: 15px 15px 0 190px;
+}
+
+footer .col a {
+	float: right;
+	margin-right: 250px;
+	text-decoration: none;
+	color: var(--font-black-color, #333);
+}
+
 /* Desktop */
 @media (min-width: 992px) {
 	.navbar .navbar-brand {
@@ -125,11 +154,18 @@
 		margin-left: -345px;
 	}
 
-	.jumbotron .nav li a {
+	.jumbotron .nav li a,
+	.testimonial .title,
+	.mega-footer h3,
+	.mega-footer .sitemap a {
 		text-transform: uppercase;
 	}
 
 	.product .img-transition img:hover {
 		transform: scale(2);
+	}
+
+	.mega-footer .about {
+		margin-left: 150px;
 	}
 }
