@@ -57,6 +57,10 @@
 }
 
 /* Header title */
+.header-title {
+	margin: 15px 0;
+}
+
 .header-title .title {
 	width: 100%;
 	height: 50px;
