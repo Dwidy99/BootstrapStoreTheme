@@ -1,6 +1,4 @@
 :root {
-	--main-font: 'Kiwi Maru', serif;
-	--second-font: 'Poppins', sans-serif;
 	--main-color: #5e328e;
 	--second-color: #400085;
 	--danger-color: #e73034;
@@ -10,18 +8,18 @@
 	--font-white-color: #fff;
 }
 
+@font-face {
+	font-family: 'Cascadia Code';
+	src: url('../font/Cascadia.ttf') format('truetype');
+}
+
 /* Navbar */
-.navbar .navbar-brand {
-	font-family: var(--danger-font, verdana);
-	font-size: 16px;
+.navbar a {
+	font-family: 'Cascadia Code';
 }
 
 .navbar .navbar-brand:hover {
 	color: var(--third-color, green);
-}
-
-.navbar .nav-link {
-	color: var(--font-black-color, #333);
 }
 
 /* jumbotron */
