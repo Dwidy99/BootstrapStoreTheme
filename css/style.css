@@ -34,10 +34,10 @@ p {
 	font-weight: 600;
 }
 
-/* Navbar */
 .navbar a,
 .jumbotron .nav .nav-link,
-.mega-footer h3 {
+.mega-footer h3,
+footer {
 	font-family: 'Cascadia Code';
 }
 
@@ -177,7 +177,7 @@ footer .col a {
 		text-transform: uppercase;
 	}
 
-	.jumbotron .row img {
+	.jumbotron .row a {
 		margin-left: -345px;
 	}
 
