@@ -13,8 +13,31 @@
 	src: url('../font/Cascadia.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: 'Courier Prime Code';
+	src: url('../font/Courier-Prime-Code.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'SourceSansPro-Light';
+	src: url('../font/SourceSansPro-Light.otf') format('truetype');
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Courier Prime Code';
+}
+
+p {
+	font-family: 'SourceSansPro-Light';
+	font-weight: 600;
+}
+
 /* Navbar */
-.navbar a {
+.navbar a,
+.jumbotron .nav .nav-link,
+.mega-footer h3 {
 	font-family: 'Cascadia Code';
 }
 
@@ -84,6 +107,12 @@
 /* Testi */
 .testimonial {
 	background-color: var(--main-color, purple);
+	min-height: 350px;
+	flex-direction: column;
+}
+
+.testimonial .testi {
+	padding-bottom: 20px;
 }
 
 .testimonial .title {
