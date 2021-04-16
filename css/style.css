@@ -78,6 +78,19 @@ footer {
 	margin-top: -32px;
 }
 
+/* Table-cart */
+.table-cart table {
+	margin: auto;
+}
+
+.table-cart table img {
+	width: 100px;
+}
+
+.table-cart td {
+	padding: 10px 0 10px 0;
+}
+
 /* Header title */
 .header-title {
 	margin: 15px 0;
@@ -89,6 +102,11 @@ footer {
 	background-color: var(--main-color, purple);
 	color: var(--font-white-color, #fff);
 	border-left: 5px solid var(--danger-color, red);
+	text-transform: uppercase;
+}
+
+.header-title h2 {
+	padding-top: 5px;
 }
 
 /* Product */
@@ -159,26 +177,15 @@ footer {
 	color: white;
 }
 
-/* footer */
-footer .text {
-	margin: 15px 15px 0 190px;
-}
-
-footer .col a {
-	float: right;
-	margin-right: 250px;
-	text-decoration: none;
-	color: var(--font-black-color, #333);
+footer p,
+footer a {
+	margin-top: 10px;
 }
 
 /* Desktop */
 @media (min-width: 992px) {
 	.navbar .navbar-brand {
 		text-transform: uppercase;
-	}
-
-	.jumbotron .row a {
-		margin-left: -345px;
 	}
 
 	.jumbotron .nav li a,
