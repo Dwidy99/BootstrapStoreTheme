@@ -101,7 +101,7 @@ footer {
 
 /* Header title */
 .header-title {
-	margin: 75px 0;
+	margin: 25px 0;
 }
 
 .header-title .title {
@@ -128,6 +128,11 @@ footer {
 
 .product .img-transition img:target {
 	transform: scale(2);
+}
+
+/* form */
+.form {
+	margin-bottom: 25px;
 }
 
 /* Testi */
