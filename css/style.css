@@ -130,9 +130,29 @@ footer {
 	transform: scale(2);
 }
 
-/* form */
+/* Form */
 .form {
 	margin-bottom: 25px;
+}
+
+/* Detail */
+.detail {
+	margin: 50px;
+	flex-direction: row;
+}
+
+.detail .desc h3,
+.detail .desc h5 {
+	margin: 0;
+}
+
+.detail h5 {
+	color: var(--danger-color, red);
+}
+
+.detail img {
+	width: 400px;
+	height: 250px;
 }
 
 /* Testi */
